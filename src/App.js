@@ -20,6 +20,7 @@ const menu = [
         children: [
           {
             title: 'Username child',
+            url: 'https://library.mediaworks.global/en',
             icon: '⚙️',
             children: []
           },
@@ -42,6 +43,7 @@ const menu = [
         children: [
         {
           title: 'flashlight',
+          url: 'https://library.mediaworks.global/en',
           icon: null,
           children: []
         }
