@@ -36,6 +36,7 @@ const menu = [
       {
         title: 'settings',
         icon: '⚙️',
+        url: 'https://library.mediaworks.global/en',
         children: []
       },
       {

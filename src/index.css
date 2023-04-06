@@ -25,7 +25,6 @@ a {
 .navbar {
   height: var(--nav-size);
   background-color: var(--bg);
-  padding: 0 1rem;
   bottom: 0;
   position: fixed;
   width: 100%;
@@ -103,34 +102,30 @@ a {
 }
 
 @keyframes in {
-  0%   {right: 0%;}
-  25%   {right: 25%;}
-  50%   {right: 50%;}
-  75%   {right: 100%;}
-  100% {right: 200%}
+  0%   {right: 100%;}
+  100% {right: 0%}
 }
 
 @keyframes out {
-  0%   {left: 0%;}
-  25%   {left: 25%;}
-  50%   {left: 50%;}
-  75%   {left: 100%;}
-  100% {left: 200%}
+  0%   {left: 100%}
+  100% {left: 0%}
 }
 
 .enter {
   animation-name: out;
   animation-duration: 500ms;
-  animation-timing-function: ease-in;}
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(.4,.43,.45,.95);
+}
 
 .exit {
   animation-name: in;
   animation-duration: 500ms;
-  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(.4,.43,.45,.95);
 }
 
 .menu-item {
-  overflow: hidden;
   height: 50px;
   position: relative;
   display: flex;
